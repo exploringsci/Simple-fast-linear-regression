@@ -17,5 +17,10 @@ class regression:
         avgslope = slopesum / len(inputsarr)
         return "y - " + str(avxy[1]) + " = " + str(avgslope) + "(x - " + str(avxy[0]) + ")"
 regr = regression()
-equ = regr.main([[1, 1], [2, 1], [3, 2], [4, 3], [5, 3]])
+inputList = input('Enter the x and y values of each point in the format x1,y1 x2,y2 x3,y3 etc. Space between points, comma only between x and y ')
+inputList = inputList.split()
+for x in range(len(inputList)):
+    inputList[x] = inputList[x].split(",")
+inputList = [list(map(int, point)) for point in inputList]
+equ = regr.main(inputList)
 print (equ)
