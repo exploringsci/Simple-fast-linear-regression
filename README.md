@@ -1,0 +1,1 @@
+A python code to give a line of best fit to a scatterplot. This may provide a worse fit than the typical scatterplot algorithm, but I believe it is quite simple to understand compared to the other one. Also, it might be faster, but I don't know. I will update this file once I know more. 
